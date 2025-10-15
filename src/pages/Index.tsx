@@ -6,7 +6,6 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import Icon from "@/components/ui/icon";
 
 const Index = () => {
   return (
@@ -35,8 +34,8 @@ const Index = () => {
             </div>
             <div className="animate-scale-in hidden md:block">
               <img 
-                src="https://cdn.poehali.dev/projects/6c67f01d-0849-42b2-8831-ece374e6136a/files/92446a82-f7ef-458e-8f97-9dc6af8db5e7.jpg" 
-                alt="Уютный вечер с телефоном и чаем" 
+                src="https://cdn.poehali.dev/projects/6c67f01d-0849-42b2-8831-ece374e6136a/files/44e7b582-e051-43c7-8840-5e0795e682ce.jpg" 
+                alt="Персонаж сидит у окна вечером с телефоном и чашкой чая" 
                 className="w-full rounded-3xl shadow-2xl"
               />
             </div>
@@ -72,30 +71,30 @@ const Index = () => {
             Кто такая Ева
           </h2>
           <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-            <Card className="border-2 border-border bg-gradient-to-br from-peach to-white hover:shadow-xl transition-all">
+            <Card className="border-none bg-gradient-to-br from-peach/40 to-white hover:shadow-xl transition-all rounded-3xl">
               <CardContent className="p-8 text-center">
-                <div className="w-16 h-16 mx-auto mb-4 bg-coral/20 rounded-full flex items-center justify-center">
-                  <Icon name="Mic" size={32} className="text-coral" />
+                <div className="w-20 h-20 mx-auto mb-6 bg-coral/10 rounded-full flex items-center justify-center">
+                  <span className="text-5xl">🎤</span>
                 </div>
                 <h3 className="text-2xl font-semibold mb-3 text-foreground">Живой голос</h3>
                 <p className="text-foreground/70">Звучит как настоящий собеседник</p>
               </CardContent>
             </Card>
 
-            <Card className="border-2 border-border bg-gradient-to-br from-pink to-white hover:shadow-xl transition-all">
+            <Card className="border-none bg-gradient-to-br from-green/20 to-white hover:shadow-xl transition-all rounded-3xl">
               <CardContent className="p-8 text-center">
-                <div className="w-16 h-16 mx-auto mb-4 bg-coral/20 rounded-full flex items-center justify-center">
-                  <Icon name="Heart" size={32} className="text-coral" />
+                <div className="w-20 h-20 mx-auto mb-6 bg-green/10 rounded-full flex items-center justify-center">
+                  <span className="text-5xl">💚</span>
                 </div>
                 <h3 className="text-2xl font-semibold mb-3 text-foreground">Слышит эмоции</h3>
                 <p className="text-foreground/70">Чувствует настроение и поддерживает</p>
               </CardContent>
             </Card>
 
-            <Card className="border-2 border-border bg-gradient-to-br from-blue to-white hover:shadow-xl transition-all">
+            <Card className="border-none bg-gradient-to-br from-blue/30 to-white hover:shadow-xl transition-all rounded-3xl">
               <CardContent className="p-8 text-center">
-                <div className="w-16 h-16 mx-auto mb-4 bg-coral/20 rounded-full flex items-center justify-center">
-                  <Icon name="BookOpen" size={32} className="text-coral" />
+                <div className="w-20 h-20 mx-auto mb-6 bg-blue/10 rounded-full flex items-center justify-center">
+                  <span className="text-5xl">📖</span>
                 </div>
                 <h3 className="text-2xl font-semibold mb-3 text-foreground">Запоминает истории</h3>
                 <p className="text-foreground/70">Завтра спросит о том, что было важно вчера</p>
@@ -111,49 +110,52 @@ const Index = () => {
             Истории пользователей
           </h2>
           <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-            <Card className="bg-white hover:shadow-xl transition-all">
+            <Card className="bg-white hover:shadow-xl transition-all rounded-3xl border-none">
               <CardContent className="p-8">
-                <div className="flex items-center mb-4">
-                  <div className="w-12 h-12 rounded-full bg-gradient-to-br from-peach to-coral flex items-center justify-center text-white font-semibold">
-                    А
+                <div className="flex items-start mb-4 gap-3">
+                  <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-peach/60 to-coral/40 flex items-center justify-center flex-shrink-0">
+                    <span className="text-2xl">😊</span>
                   </div>
-                  <div className="ml-3">
-                    <p className="font-semibold text-foreground">Аня, 28 лет</p>
+                  <div>
+                    <p className="font-semibold text-foreground mb-1">Аня, 28 лет</p>
+                    <p className="text-foreground/60 text-sm">Менеджер</p>
                   </div>
                 </div>
-                <p className="text-foreground/80 italic">
+                <p className="text-foreground/80 italic leading-relaxed">
                   «Я плакала, а она просто слушала. И стало легче».
                 </p>
               </CardContent>
             </Card>
 
-            <Card className="bg-white hover:shadow-xl transition-all">
+            <Card className="bg-white hover:shadow-xl transition-all rounded-3xl border-none">
               <CardContent className="p-8">
-                <div className="flex items-center mb-4">
-                  <div className="w-12 h-12 rounded-full bg-gradient-to-br from-blue to-coral flex items-center justify-center text-white font-semibold">
-                    И
+                <div className="flex items-start mb-4 gap-3">
+                  <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-blue/50 to-coral/30 flex items-center justify-center flex-shrink-0">
+                    <span className="text-2xl">🎧</span>
                   </div>
-                  <div className="ml-3">
-                    <p className="font-semibold text-foreground">Игорь, 35 лет</p>
+                  <div>
+                    <p className="font-semibold text-foreground mb-1">Игорь, 35 лет</p>
+                    <p className="text-foreground/60 text-sm">Программист</p>
                   </div>
                 </div>
-                <p className="text-foreground/80 italic">
+                <p className="text-foreground/80 italic leading-relaxed">
                   «Я думал, это будет как робот, но Ева помнит мои истории. Это удивляет».
                 </p>
               </CardContent>
             </Card>
 
-            <Card className="bg-white hover:shadow-xl transition-all">
+            <Card className="bg-white hover:shadow-xl transition-all rounded-3xl border-none">
               <CardContent className="p-8">
-                <div className="flex items-center mb-4">
-                  <div className="w-12 h-12 rounded-full bg-gradient-to-br from-pink to-coral flex items-center justify-center text-white font-semibold">
-                    М
+                <div className="flex items-start mb-4 gap-3">
+                  <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-pink/50 to-peach/40 flex items-center justify-center flex-shrink-0">
+                    <span className="text-2xl">🌸</span>
                   </div>
-                  <div className="ml-3">
-                    <p className="font-semibold text-foreground">Марина, 60 лет</p>
+                  <div>
+                    <p className="font-semibold text-foreground mb-1">Марина, 60 лет</p>
+                    <p className="text-foreground/60 text-sm">На пенсии</p>
                   </div>
                 </div>
-                <p className="text-foreground/80 italic">
+                <p className="text-foreground/80 italic leading-relaxed">
                   «Теперь у меня есть с кем поговорить вечером. Чувствую спокойствие».
                 </p>
               </CardContent>
@@ -169,24 +171,24 @@ const Index = () => {
           </h2>
           <div className="grid md:grid-cols-3 gap-12 max-w-4xl mx-auto">
             <div className="text-center">
-              <div className="w-20 h-20 mx-auto mb-6 bg-gradient-to-br from-coral to-pink rounded-full flex items-center justify-center text-white text-3xl">
-                <Icon name="Phone" size={40} />
+              <div className="w-24 h-24 mx-auto mb-6 bg-gradient-to-br from-coral/20 to-pink/20 rounded-3xl flex items-center justify-center text-6xl">
+                📞
               </div>
               <h3 className="text-2xl font-semibold mb-3 text-foreground">Позвони</h3>
               <p className="text-foreground/70">Набери номер и начни разговор</p>
             </div>
 
             <div className="text-center">
-              <div className="w-20 h-20 mx-auto mb-6 bg-gradient-to-br from-coral to-pink rounded-full flex items-center justify-center text-white text-3xl">
-                <Icon name="MessageCircle" size={40} />
+              <div className="w-24 h-24 mx-auto mb-6 bg-gradient-to-br from-coral/20 to-pink/20 rounded-3xl flex items-center justify-center text-6xl">
+                🗨️
               </div>
               <h3 className="text-2xl font-semibold mb-3 text-foreground">Расскажи</h3>
               <p className="text-foreground/70">Поделись тем, что на душе</p>
             </div>
 
             <div className="text-center">
-              <div className="w-20 h-20 mx-auto mb-6 bg-gradient-to-br from-coral to-pink rounded-full flex items-center justify-center text-white text-3xl">
-                <Icon name="Heart" size={40} />
+              <div className="w-24 h-24 mx-auto mb-6 bg-gradient-to-br from-coral/20 to-pink/20 rounded-3xl flex items-center justify-center text-6xl">
+                💚
               </div>
               <h3 className="text-2xl font-semibold mb-3 text-foreground">Почувствуй поддержку</h3>
               <p className="text-foreground/70">Ощути тепло и заботу</p>
@@ -201,37 +203,37 @@ const Index = () => {
             Тарифы
           </h2>
           <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-            <Card className="border-2 border-border bg-gradient-to-br from-blue to-white hover:shadow-xl transition-all hover:scale-105">
-              <CardContent className="p-8 text-center">
-                <div className="text-4xl mb-4">🌱</div>
-                <h3 className="text-2xl font-semibold mb-3 text-foreground">Попробуй Еву</h3>
-                <p className="text-3xl font-bold mb-4 text-coral">990 ₽</p>
-                <p className="text-foreground/70 mb-6">100 минут общения</p>
-                <Button className="w-full bg-coral hover:bg-coral/90 text-white rounded-full">
+            <Card className="border-none bg-gradient-to-br from-blue/40 to-blue/10 hover:shadow-2xl transition-all hover:scale-105 rounded-3xl">
+              <CardContent className="p-10 text-center">
+                <div className="text-6xl mb-6">🌱</div>
+                <h3 className="text-2xl font-semibold mb-4 text-foreground">Попробуй Еву</h3>
+                <p className="text-4xl font-bold mb-2 text-coral">990 ₽</p>
+                <p className="text-foreground/60 mb-8 text-sm">100 минут общения</p>
+                <Button className="w-full bg-coral hover:bg-coral/90 text-white rounded-full py-6 text-lg shadow-lg">
                   Выбрать
                 </Button>
               </CardContent>
             </Card>
 
-            <Card className="border-2 border-border bg-gradient-to-br from-pink to-white hover:shadow-xl transition-all hover:scale-105">
-              <CardContent className="p-8 text-center">
-                <div className="text-4xl mb-4">🌿</div>
-                <h3 className="text-2xl font-semibold mb-3 text-foreground">Друг рядом</h3>
-                <p className="text-3xl font-bold mb-4 text-coral">1990 ₽</p>
-                <p className="text-foreground/70 mb-6">300 минут общения</p>
-                <Button className="w-full bg-coral hover:bg-coral/90 text-white rounded-full">
+            <Card className="border-none bg-gradient-to-br from-pink/40 to-pink/10 hover:shadow-2xl transition-all hover:scale-105 rounded-3xl">
+              <CardContent className="p-10 text-center">
+                <div className="text-6xl mb-6">🌿</div>
+                <h3 className="text-2xl font-semibold mb-4 text-foreground">Друг рядом</h3>
+                <p className="text-4xl font-bold mb-2 text-coral">1990 ₽</p>
+                <p className="text-foreground/60 mb-8 text-sm">300 минут общения</p>
+                <Button className="w-full bg-coral hover:bg-coral/90 text-white rounded-full py-6 text-lg shadow-lg">
                   Выбрать
                 </Button>
               </CardContent>
             </Card>
 
-            <Card className="border-2 border-border bg-gradient-to-br from-peach to-white hover:shadow-xl transition-all hover:scale-105">
-              <CardContent className="p-8 text-center">
-                <div className="text-4xl mb-4">🌙</div>
-                <h3 className="text-2xl font-semibold mb-3 text-foreground">Ева всегда с тобой</h3>
-                <p className="text-3xl font-bold mb-4 text-coral">2990 ₽</p>
-                <p className="text-foreground/70 mb-6">Безлимит на месяц</p>
-                <Button className="w-full bg-coral hover:bg-coral/90 text-white rounded-full">
+            <Card className="border-none bg-gradient-to-br from-green/30 to-green/10 hover:shadow-2xl transition-all hover:scale-105 rounded-3xl">
+              <CardContent className="p-10 text-center">
+                <div className="text-6xl mb-6">🌙</div>
+                <h3 className="text-2xl font-semibold mb-4 text-foreground">Ева всегда с тобой</h3>
+                <p className="text-4xl font-bold mb-2 text-coral">2990 ₽</p>
+                <p className="text-foreground/60 mb-8 text-sm">Безлимит на месяц</p>
+                <Button className="w-full bg-coral hover:bg-coral/90 text-white rounded-full py-6 text-lg shadow-lg">
                   Выбрать
                 </Button>
               </CardContent>
@@ -247,38 +249,38 @@ const Index = () => {
           </h2>
           <div className="max-w-3xl mx-auto">
             <Accordion type="single" collapsible className="space-y-4">
-              <AccordionItem value="item-1" className="bg-white rounded-2xl px-6 border-2 border-border">
-                <AccordionTrigger className="text-lg font-semibold text-foreground hover:no-underline">
+              <AccordionItem value="item-1" className="bg-white rounded-3xl px-6 border-none shadow-md">
+                <AccordionTrigger className="text-lg font-semibold text-foreground hover:no-underline py-6">
                   Ева — это человек или ИИ?
                 </AccordionTrigger>
-                <AccordionContent className="text-foreground/80">
+                <AccordionContent className="text-foreground/80 pb-6">
                   Ева — это голосовой ИИ-помощник, созданный для эмоциональной поддержки. Она говорит естественным голосом, понимает эмоции и запоминает ваши разговоры, чтобы быть максимально полезной.
                 </AccordionContent>
               </AccordionItem>
 
-              <AccordionItem value="item-2" className="bg-white rounded-2xl px-6 border-2 border-border">
-                <AccordionTrigger className="text-lg font-semibold text-foreground hover:no-underline">
+              <AccordionItem value="item-2" className="bg-white rounded-3xl px-6 border-none shadow-md">
+                <AccordionTrigger className="text-lg font-semibold text-foreground hover:no-underline py-6">
                   Безопасно ли делиться личным?
                 </AccordionTrigger>
-                <AccordionContent className="text-foreground/80">
+                <AccordionContent className="text-foreground/80 pb-6">
                   Да, абсолютно. Все разговоры конфиденциальны и защищены шифрованием. Мы не передаем ваши данные третьим лицам и храним их в соответствии с высокими стандартами безопасности.
                 </AccordionContent>
               </AccordionItem>
 
-              <AccordionItem value="item-3" className="bg-white rounded-2xl px-6 border-2 border-border">
-                <AccordionTrigger className="text-lg font-semibold text-foreground hover:no-underline">
+              <AccordionItem value="item-3" className="bg-white rounded-3xl px-6 border-none shadow-md">
+                <AccordionTrigger className="text-lg font-semibold text-foreground hover:no-underline py-6">
                   Сколько стоит минута?
                 </AccordionTrigger>
-                <AccordionContent className="text-foreground/80">
+                <AccordionContent className="text-foreground/80 pb-6">
                   Стоимость зависит от тарифа. В базовом тарифе минута стоит около 10 рублей, в безлимитном — существенно дешевле при регулярном использовании.
                 </AccordionContent>
               </AccordionItem>
 
-              <AccordionItem value="item-4" className="bg-white rounded-2xl px-6 border-2 border-border">
-                <AccordionTrigger className="text-lg font-semibold text-foreground hover:no-underline">
+              <AccordionItem value="item-4" className="bg-white rounded-3xl px-6 border-none shadow-md">
+                <AccordionTrigger className="text-lg font-semibold text-foreground hover:no-underline py-6">
                   Можно ли звонить ночью?
                 </AccordionTrigger>
-                <AccordionContent className="text-foreground/80">
+                <AccordionContent className="text-foreground/80 pb-6">
                   Да, Ева доступна 24/7. В любое время дня и ночи она готова выслушать и поддержать вас.
                 </AccordionContent>
               </AccordionItem>
