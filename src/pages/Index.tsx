@@ -18,32 +18,50 @@ const Index = () => {
         </div>
         
         <div className="container mx-auto px-4 py-16 relative z-10">
-          <div className="max-w-4xl mx-auto text-center animate-fade-in">
-            <h1 className="text-5xl md:text-7xl font-bold mb-6 text-foreground leading-tight">
-              Когда тяжело или одиноко — просто позвони Еве
-            </h1>
-            <p className="text-xl md:text-2xl mb-8 text-foreground/80 max-w-2xl mx-auto">
-              Теплый голос, который выслушает и поддержит. По-человечески, с заботой и без осуждения — в любое время.
-            </p>
-            <Button size="lg" className="text-lg px-8 py-6 rounded-full bg-coral hover:bg-coral/90 text-white shadow-lg hover:shadow-xl transition-all">
-              Поговорить с Евой
-            </Button>
-            <p className="text-sm mt-4 text-foreground/60">
-              Первые 10 минут — в подарок от сердца
-            </p>
+          <div className="grid md:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
+            <div className="animate-fade-in">
+              <h1 className="text-4xl md:text-6xl font-bold mb-6 text-foreground leading-tight">
+                Когда тяжело или одиноко — просто позвони Еве
+              </h1>
+              <p className="text-lg md:text-xl mb-8 text-foreground/80">
+                Теплый голос, который выслушает и поддержит. По-человечески, с заботой и без осуждения — в любое время.
+              </p>
+              <Button size="lg" className="text-lg px-8 py-6 rounded-full bg-coral hover:bg-coral/90 text-white shadow-lg hover:shadow-xl transition-all">
+                Поговорить с Евой
+              </Button>
+              <p className="text-sm mt-4 text-foreground/60">
+                Первые 10 минут — в подарок от сердца
+              </p>
+            </div>
+            <div className="animate-scale-in hidden md:block">
+              <img 
+                src="https://cdn.poehali.dev/projects/6c67f01d-0849-42b2-8831-ece374e6136a/files/92446a82-f7ef-458e-8f97-9dc6af8db5e7.jpg" 
+                alt="Уютный вечер с телефоном и чаем" 
+                className="w-full rounded-3xl shadow-2xl"
+              />
+            </div>
           </div>
         </div>
       </section>
 
       <section className="py-20 bg-blue">
         <div className="container mx-auto px-4">
-          <div className="max-w-3xl mx-auto text-center animate-scale-in">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
-              Иногда нужен просто живой голос
-            </h2>
-            <p className="text-lg md:text-xl text-foreground/80">
-              Бывает, что не хочется нагружать близких, но молчать тяжело. В такие моменты рядом может быть Ева.
-            </p>
+          <div className="grid md:grid-cols-2 gap-12 items-center max-w-5xl mx-auto">
+            <div className="hidden md:block">
+              <img 
+                src="https://cdn.poehali.dev/projects/6c67f01d-0849-42b2-8831-ece374e6136a/files/a71676fb-13dc-4a83-a759-81da74d045ec.jpg" 
+                alt="Уютное окно с мягким светом" 
+                className="w-full rounded-3xl shadow-xl"
+              />
+            </div>
+            <div>
+              <h2 className="text-3xl md:text-5xl font-bold mb-6 text-foreground">
+                Иногда нужен просто живой голос
+              </h2>
+              <p className="text-lg md:text-xl text-foreground/80">
+                Бывает, что не хочется нагружать близких, но молчать тяжело. В такие моменты рядом может быть Ева.
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -269,23 +287,32 @@ const Index = () => {
         </div>
       </section>
 
-      <section className="py-24 bg-gradient-to-br from-beige via-peach to-pink relative overflow-hidden">
+      <section className="py-24 bg-gradient-to-br from-olive via-beige to-peach relative overflow-hidden">
         <div className="absolute inset-0 opacity-20">
           <div className="absolute top-20 right-10 w-40 h-40 bg-coral rounded-full blur-3xl"></div>
           <div className="absolute bottom-20 left-20 w-32 h-32 bg-blue rounded-full blur-3xl"></div>
         </div>
         
         <div className="container mx-auto px-4 relative z-10">
-          <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-4xl md:text-6xl font-bold mb-6 text-foreground">
-              Ты не один. У тебя всегда есть Ева.
-            </h2>
-            <p className="text-xl md:text-2xl mb-8 text-foreground/80">
-              Позвони прямо сейчас — и тебе станет легче.
-            </p>
-            <Button size="lg" className="text-lg px-8 py-6 rounded-full bg-coral hover:bg-coral/90 text-white shadow-lg hover:shadow-xl transition-all">
-              Позвонить сейчас
-            </Button>
+          <div className="grid md:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
+            <div className="hidden md:block">
+              <img 
+                src="https://cdn.poehali.dev/projects/6c67f01d-0849-42b2-8831-ece374e6136a/files/2d699f7c-f177-4255-a6fe-cfb26f173a2a.jpg" 
+                alt="Уютный вечер — лампа, кресло, человек с телефоном" 
+                className="w-full rounded-3xl shadow-2xl"
+              />
+            </div>
+            <div className="text-center md:text-left">
+              <h2 className="text-4xl md:text-6xl font-bold mb-6 text-foreground">
+                Ты не один. У тебя всегда есть Ева.
+              </h2>
+              <p className="text-xl md:text-2xl mb-8 text-foreground/80">
+                Позвони прямо сейчас — и тебе станет легче.
+              </p>
+              <Button size="lg" className="text-lg px-8 py-6 rounded-full bg-coral hover:bg-coral/90 text-white shadow-lg hover:shadow-xl transition-all">
+                Позвонить сейчас
+              </Button>
+            </div>
           </div>
         </div>
       </section>
